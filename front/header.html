@@ -13,24 +13,24 @@
 	<header>
 		<div class="container">
 			<div class="header_inner d_flex">
-				<a href="" class="logo_header"><img src="img/logo.svg" alt=""></a>
+				<a href="index.html" class="logo_header"><img src="img/logo.svg" alt=""></a>
 				<div class="left_part_header d_flex">
 					<label for="" class="input_search">
 						<input type="text" placeholder="Пошук">
 						<img src="img/search.svg" alt="">
 					</label>
 					<ul class="nav_menu">
-						<li class="nav_page"><a href="index.html">Головна </a></li>
+						<li class="nav_page active"><a href="index.html">Головна </a></li>
 						<li class="nav_page"><a href="our_team.html">Команда </a></li>
 						<li class="nav_page"><a href="practices.html">Практики</a></li>
 						<li class="nav_page"><a href="press_centre.html">Прес-центр</a></li>
 						<li class="nav_page"><a href="vacancies.html">Вакансії</a></li>
 						<li class="nav_page"><a href="contact.html">Контакти</a></li>
 					</ul>
-					<a href="#popup_search" class="search_btn">
+					<a href="#popup_search" class="search_btn get_body_hidden">
 						<img src="img/search.svg" alt="">
 					</a>
-					<a href="#popup_need_consultation" class="black_button btn_need_consultation">Зв'язатися з нами</a>
+					<a href="#popup_need_consultation" class="black_button btn_need_consultation get_body_hidden">Зв'язатися з нами</a>
 					<ul class="languages_menu">
 						<li><a href="">EN</a></li>
 						<ul class="sub_menu">
@@ -50,12 +50,12 @@
 		<div class="text_part">
 			<h3>Потрібна консультація?</h3>
 			<p>Обвинувальний акт є одним із найважливіших процесуальних документів у кримінальному процесі. Закон чітко встано ...</p>
-			<form action="" class="consultation_form consultation_form_popup">
+			<form action="" class="consultation_form consultation_form_popup" autocomplete="off">
 				<div class="input_form">	
 					<input type="text" placeholder="Ваше ім'я" name="first_name">
 				</div>
 				<div class="input_form">
-					<input type="" placeholder="Ваш номер телефону" name="phone">
+					<input type="tel" inputmode="numeric" placeholder="Ваш номер телефону" name="phone" aria-invalid="false" class="phoneInput">
 				</div>
 				<div class="input_form">
 					<input type="email" placeholder="Ваш Email" name="email">

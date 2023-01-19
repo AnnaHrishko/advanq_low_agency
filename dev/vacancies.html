@@ -27,7 +27,7 @@
 				<div class="text">
 					<h3>Не знайшли потрібну вакансію?</h3>
 					<p>Ми завжди в пошуку талантів. Надішліть нам своє резюме, і ми обов’язково зв’яжемося з вами.</p>
-					<a href="#popup_send_resume" class="black_button open_popup_send_resume">Зв'язатися з нами</a>
+					<a href="#popup_send_resume" class="black_button open_popup_send_resume get_body_hidden">Зв'язатися з нами</a>
 				</div>
 			</div>
 			<div class="participation_in_internship_wrap full_width_col">
@@ -42,9 +42,9 @@
 				<div class="left">
 					<h3>Контакти</h3>
 					<div class="soc_media_row">
-						<a href="" class="soc_media_icon"><img src="img/facebook.svg" alt=""></a>
-						<a href="" class="soc_media_icon"><img src="img/linkedin.svg" alt=""></a>
-						<a href="" class="soc_media_icon"><img src="img/instagram.svg" alt=""></a>
+						<a href="" class="soc_media_icon" target="_blank" rel="nofollow"><img src="img/facebook.svg" alt=""></a>
+						<a href="" class="soc_media_icon" target="_blank" rel="nofollow"><img src="img/linkedin.svg" alt=""></a>
+						<a href="" class="soc_media_icon" target="_blank" rel="nofollow"><img src="img/instagram.svg" alt=""></a>
 					</div>
 					<a href="" class="phone">(044) 234 79 70 </a>
 					<a href="" class="email">office@advanq.com</a>
@@ -57,12 +57,12 @@
 				<div class="text_part">
 					<h3>Потрібна консультація?</h3>
 					<p>Обвинувальний акт є одним із найважливіших процесуальних документів у кримінальному процесі. Закон чітко встано ...</p>
-					<form action="" class="consultation_form consultation_form_validate_mobile">
+					<form action="" class="consultation_form consultation_form_validate_mobile" autocomplete="off">
 						<div class="input_form">	
 							<input type="text" placeholder="Ваше ім'я" name="first_name">
 						</div>
 						<div class="input_form">
-							<input type="" placeholder="Ваш номер телефону" name="phone">
+							<input type="tel" inputmode="numeric" placeholder="Ваш номер телефону" name="phone" aria-invalid="false" class="phoneInput">
 						</div>
 						<div class="input_form">
 							<input type="email" placeholder="Ваш Email" name="email">
@@ -72,7 +72,7 @@
 				</div>
 			</div>
 			<div class="address_wrap bcg_grey">
-				<a href="" class="map"><img src="img/google_map.png" alt=""></a>
+				<div class="map"><img src="img/google_map.png" alt=""></div>
 				<p>м. Київ, вул. Шовковична 42-44,офіс 7-Д, <br>Бізнес-центр Horizon Office Towers</p>
 			</div>
 		</div>
@@ -80,12 +80,12 @@
 			<div class="text_part">
 				<h3>Потрібна консультація?</h3>
 				<p>Обвинувальний акт є одним із найважливіших процесуальних документів у кримінальному процесі. Закон чітко встано ...</p>
-				<form action="" class="consultation_form consultation_form_validate_desktop">
+				<form action="" class="consultation_form consultation_form_validate_desktop" autocomplete="off">
 					<div class="input_form">	
 						<input type="text" placeholder="Ваше ім'я" name="first_name">
 					</div>
 					<div class="input_form">
-						<input type="" placeholder="Ваш номер телефону" name="phone">
+						<input type="tel" inputmode="numeric" placeholder="Ваш номер телефону" name="phone" aria-invalid="false" class="phoneInput">
 					</div>
 					<div class="input_form">
 						<input type="email" placeholder="Ваш Email" name="email">
@@ -101,7 +101,7 @@
 	<img class="close_popup" src="img/close_popup.svg" alt="">
 	<div class="text_part">
 		<h3>Надіслати резюме</h3>
-		<form action="" class="consultation_form form_send_resume_validate" id="form_send_resume">
+		<form action="" class="consultation_form form_send_resume_validate" id="form_send_resume" autocomplete="off">
 				<div class="input_form">
 					<input type="text" placeholder="Ваше ім'я" name="first_name">
 				</div>
@@ -109,20 +109,24 @@
 					<input type="email" placeholder="Ваш Email" name="email">
 				</div>
 				<div class="input_form">
-					<input type="" placeholder="Ваш номер телефону" name="phone">
+					<input type="tel" inputmode="numeric" placeholder="Ваш номер телефону" name="phone" aria-invalid="false" class="phoneInput">
 				</div>
 				<div class="input_form">
 					<input type="text" placeholder="Назва вакансії" name="name_vacancie">
 				</div>
 				<textarea name="" id="" cols="30" rows="10" placeholder="Супровідний лист"></textarea>
 				<div class="flex_bottom_part">
-					<label for="custom_add_file" class="custom_add_file">
-						<div class="add_file_img">
-							<img src="img/choose_file.svg" alt="">
-						</div>
-						<span>Додати резюме</span>
-					</label>
-					<input type="file" id="custom_add_file" class="input_add_file">
+					<div class="add_file_wrap">
+						<label for="custom_add_file" class="custom_add_file">
+							<div class="add_file_img">
+								<img src="img/choose_file.svg" alt="">
+							</div>
+							<span>Додати резюме</span>
+						</label>
+						<div class="uploaded_file"></div>
+						<div class="max_size_file"></div>
+					</div>
+					<input type="file" id="custom_add_file" class="input_add_file" accept=".xlsx,.xls,.png,.gif,.jpg,.jpeg,.doc,.docx,.ppt, .pptx,.txt,.pdf"/>
 					<button class="black_button open_modal">Надіслати</button>
 				</div>
 		</form>

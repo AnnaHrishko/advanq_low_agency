@@ -45,6 +45,11 @@
     font-size: 14px;
     line-height: 22px;
   }
+  .index_page .header_inner .logo_header {
+    width: 245px;
+    height: 80px;
+    margin-right: 35px;
+  }
 }
 @media screen and (max-width: 1150px) {
   .popup_need_consultation .need_consultation_wrap {
@@ -264,8 +269,16 @@
   .popup_about_person_inner .flex_btn .sub_btn_with_img {
     margin-right: 5px;
   }
+  .index_page .header_inner .logo_header {
+    width: 195px;
+    height: 60px;
+    margin-right: 10px;
+  }
 }
 @media screen and (max-width: 900px) {
+  .header_inner {
+    align-items: center;
+  }
   .popup_need_consultation .need_consultation_wrap {
     width: 75%;
   }
@@ -283,6 +296,7 @@
     top: 0;
     left: 0;
     z-index: 10;
+    overflow-y: scroll;
   }
   header.active .header_inner {
     position: relative;
@@ -304,6 +318,7 @@
   header.active .nav_menu {
     margin-right: 0;
     margin-bottom: 40px;
+    flex-direction: column;
   }
   header.active .nav_menu .nav_page {
     display: block;
@@ -322,6 +337,7 @@
   header.active .languages_menu {
     margin-left: 0;
     justify-content: center;
+    margin-bottom: 60px;
   }
   header.active .input_search {
     margin-bottom: 35px;

@@ -13,24 +13,24 @@
 	<header>
 		<div class="container">
 			<div class="header_inner d_flex">
-				<a href="" class="logo_header"><img src="img/logo.svg" alt=""></a>
+				<a href="index.html" class="logo_header"><img src="img/logo.svg" alt=""></a>
 				<div class="left_part_header d_flex">
 					<label for="" class="input_search">
 						<input type="text" placeholder="Пошук">
 						<img src="img/search.svg" alt="">
 					</label>
 					<ul class="nav_menu">
-						<li class="nav_page"><a href="index.html">Головна </a></li>
+						<li class="nav_page active"><a href="index.html">Головна </a></li>
 						<li class="nav_page"><a href="our_team.html">Команда </a></li>
 						<li class="nav_page"><a href="practices.html">Практики</a></li>
 						<li class="nav_page"><a href="press_centre.html">Прес-центр</a></li>
 						<li class="nav_page"><a href="vacancies.html">Вакансії</a></li>
 						<li class="nav_page"><a href="contact.html">Контакти</a></li>
 					</ul>
-					<a href="#popup_search" class="search_btn">
+					<a href="#popup_search" class="search_btn get_body_hidden">
 						<img src="img/search.svg" alt="">
 					</a>
-					<a href="#popup_need_consultation" class="black_button btn_need_consultation">Зв'язатися з нами</a>
+					<a href="#popup_need_consultation" class="black_button btn_need_consultation get_body_hidden">Зв'язатися з нами</a>
 					<ul class="languages_menu">
 						<li><a href="">EN</a></li>
 						<ul class="sub_menu">
@@ -50,12 +50,12 @@
 		<div class="text_part">
 			<h3>Потрібна консультація?</h3>
 			<p>Обвинувальний акт є одним із найважливіших процесуальних документів у кримінальному процесі. Закон чітко встано ...</p>
-			<form action="" class="consultation_form consultation_form_popup">
+			<form action="" class="consultation_form consultation_form_popup" autocomplete="off">
 				<div class="input_form">	
 					<input type="text" placeholder="Ваше ім'я" name="first_name">
 				</div>
 				<div class="input_form">
-					<input type="" placeholder="Ваш номер телефону" name="phone">
+					<input type="tel" inputmode="numeric" placeholder="Ваш номер телефону" name="phone" aria-invalid="false" class="phoneInput">
 				</div>
 				<div class="input_form">
 					<input type="email" placeholder="Ваш Email" name="email">
@@ -108,7 +108,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="#popup_about_person" class="sub_btn_small btn_about_person">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 							<div class="about_person_row d_flex">
@@ -118,7 +118,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="#popup_about_person" class="sub_btn_small btn_about_person">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 						</div>
@@ -206,7 +206,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="" class="sub_btn_small">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 							<div class="about_person_row d_flex">
@@ -216,7 +216,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="" class="sub_btn_small">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 						</div>
@@ -310,7 +310,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="" class="sub_btn_small">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 							<div class="about_person_row d_flex">
@@ -320,7 +320,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="" class="sub_btn_small">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 						</div>
@@ -406,7 +406,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="" class="sub_btn_small">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 							<div class="about_person_row d_flex">
@@ -416,7 +416,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="" class="sub_btn_small">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 						</div>
@@ -511,7 +511,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="" class="sub_btn_small">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 							<div class="about_person_row d_flex">
@@ -521,7 +521,7 @@
 								<div class="about_person_descr">
 									<h3>Сергій Василишин</h3>
 									<p>Керуючий партнер, адвокат</p>
-									<a href="" class="sub_btn_small">Про адвоката</a>
+									<a href="#popup_about_person" class="sub_btn_small btn_about_person get_body_hidden">Про адвоката</a>
 								</div>
 							</div>
 						</div>
@@ -604,9 +604,9 @@
 						<div class="left">
 							<h3>Контакти</h3>
 							<div class="soc_media_row">
-								<a href="" class="soc_media_icon"><img src="img/facebook.svg" alt=""></a>
-								<a href="" class="soc_media_icon"><img src="img/linkedin.svg" alt=""></a>
-								<a href="" class="soc_media_icon"><img src="img/instagram.svg" alt=""></a>
+								<a href="" class="soc_media_icon" target="_blank" rel="nofollow"><img src="img/facebook.svg" alt=""></a>
+								<a href="" class="soc_media_icon" target="_blank" rel="nofollow"><img src="img/linkedin.svg" alt=""></a>
+								<a href="" class="soc_media_icon" target="_blank" rel="nofollow"><img src="img/instagram.svg" alt=""></a>
 							</div>
 							<a href="" class="phone">(044) 234 79 70 </a>
 							<a href="" class="email">office@advanq.com</a>
@@ -624,7 +624,7 @@
 									<input type="text" placeholder="Ваше ім'я" name="first_name">
 								</div>
 								<div class="input_form">
-									<input type="" placeholder="Ваш номер телефону" name="phone">
+									<input type="tel" inputmode="numeric" placeholder="Ваш номер телефону" name="phone" aria-invalid="false" class="phoneInput">
 								</div>
 								<div class="input_form">
 									<input type="email" placeholder="Ваш Email" name="email">
@@ -634,7 +634,7 @@
 						</div>
 					</div>
 					<div class="address_wrap bcg_grey">
-						<a href="" class="map"><img src="img/google_map.png" alt=""></a>
+						<div class="map"><img src="img/google_map.png" alt=""></div>
 						<p>м. Київ, вул. Шовковична 42-44,офіс 7-Д, <br>Бізнес-центр Horizon Office Towers</p>
 					</div>
 				</div>
@@ -642,12 +642,12 @@
 					<div class="text_part">
 						<h3>Потрібна консультація?</h3>
 						<p>Обвинувальний акт є одним із найважливіших процесуальних документів у кримінальному процесі. Закон чітко встано ...</p>
-						<form action="" class="consultation_form consultation_form_validate_desktop">
+						<form action="" class="consultation_form consultation_form_validate_desktop" autocomplete="off">
 							<div class="input_form">	
 								<input type="text" placeholder="Ваше ім'я" name="first_name">
 							</div>
 							<div class="input_form">
-								<input type="" placeholder="Ваш номер телефону" name="phone">
+								<input type="tel" inputmode="numeric" placeholder="Ваш номер телефону" name="phone" aria-invalid="false" class="phoneInput">
 							</div>
 							<div class="input_form">
 								<input type="email" placeholder="Ваш Email" name="email">
@@ -676,7 +676,7 @@
 			<div class="flex_btn d_flex">
 				<a href="" class="sub_btn_with_img">
 					<div class="download_img">
-						<svg width="" height="" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg width="25" height="25" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M1 14.5604L1 18.6583C1 19.2794 1.25022 19.875 1.69562 20.3141C2.14102 20.7533 2.74511 21 3.375 21H17.625C18.2549 21 18.859 20.7533 19.3044 20.3141C19.7498 19.875 20 19.2794 20 18.6583V14.5604M10.5013 1V14.2694M10.5013 14.2694L15.9299 9.19922M10.5013 14.2694L5.07275 9.19922" stroke="#E9561D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 					</div>
@@ -684,7 +684,7 @@
 				</a>
 				<a href="" class="sub_btn_with_img">
 					<div class="download_img">
-						<svg width="" height="" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg width="25" height="25" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M2.59961 10.5836C2.59961 14.2753 2.59961 20.0369 2.59961 20.0369C2.59961 20.0369 2.59961 20.0369 2.59961 20.0369C2.59961 21.4729 3.76367 22.6369 5.19961 22.6369H20.7996C22.2355 22.6369 23.3996 21.4729 23.3996 20.0369V9.97334M2.59961 10.5836C2.59961 10.1353 2.83051 9.71872 3.21061 9.48116L12.9996 3.36304L22.7369 8.84029C23.1463 9.07054 23.3996 9.50368 23.3996 9.97334M2.59961 10.5836C3.11961 10.5836 12.9996 17.013 12.9996 17.013L23.3996 9.97334" stroke="#E9561D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
 					</div>
@@ -718,6 +718,8 @@
 	<script src="js/jq.js"></script>
 
 	<script src="js/owl.carousel.min-min.js"></script>
+
+	<script src="js/jquery.maskedinput.js"></script>
 
 	<script src="js/jquery.magnific-popup.min.js"></script>
 

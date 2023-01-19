@@ -59,6 +59,12 @@
   }
 }
 
+.index_page .header_inner .logo_header {
+  width: 245px;
+  height: 80px;
+  margin-right: 35px;
+}
+
 
 }
 
@@ -354,9 +360,19 @@
   margin-right: 5px;
 }
 
+.index_page .header_inner .logo_header {
+  width: 195px;
+  height: 60px;
+  margin-right: 10px;
+}
+
 }
 
 @media screen and (max-width: 900px){
+
+.header_inner {
+  align-items: center;
+}
 
 .popup_need_consultation .need_consultation_wrap {
   width: 75%;
@@ -379,6 +395,7 @@ header.active{
   top: 0;
   left: 0;
   z-index: 10;
+  overflow-y: scroll;
   .header_inner {
     position: relative;
     padding: 20px 0 30px;
@@ -399,6 +416,7 @@ header.active{
   .nav_menu {
     margin-right: 0;
     margin-bottom: 40px;
+    flex-direction: column;
     .nav_page {
       display: block;
       margin-right: 0;
@@ -417,6 +435,7 @@ header.active{
   .languages_menu {
     margin-left: 0;
     justify-content: center;
+    margin-bottom: 60px;
   }
   .input_search{
     margin-bottom: 35px;

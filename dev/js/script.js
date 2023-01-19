@@ -86,7 +86,7 @@ $owl.owlCarousel({
          // navText: ['<img src="img/Left.svg">', '<img src="img/Right.svg">'],
           responsive:{
                300:{
-                  items:1,
+                  items:1.1,
                   margin:20
               }, 
           }
@@ -105,6 +105,7 @@ $('.nav_page_practices').click(function(){
 
 $('.gumb').click(function(){
   $('header').toggleClass('active')
+  $('body').toggleClass('hidden')
   $(this).toggleClass('active')
 })
 
@@ -121,6 +122,13 @@ $(function () {
   });
 });
 
+$('.get_body_hidden').click(function(){
+  $('body').addClass('hidden')
+})
+
+ $('.close_popup').click(function(){
+  $('body').removeClass('hidden')
+ })
 
 $(function () {
   $('.btn_about_person').magnificPopup({
@@ -165,7 +173,13 @@ $(function () {
 $(function() {
     $.validator.addMethod("emailRegex", function(value, element) {
         return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/i.test(value);
-    }, "");
+    }, "Недійсний формат входу");
+});
+
+jQuery(function($){
+   
+   $(".phoneInput").mask("+ 38 (999) 999-99-99");
+   $('#number-card').mask('9       9       9       9       9       9       9       9       9       9       9       9');
 });
 
 $(function() {
@@ -177,8 +191,6 @@ $(function() {
             },
             "phone": {
                 required: true,
-                minlength: 10,
-                number: true,
             },
             "email":{
                 required: true,
@@ -188,18 +200,17 @@ $(function() {
         },
         messages: {
             "email": {
-                required: "You must enter a email name",
-                emailRegex: "Login format not valid",
+                required: "Ви повинні ввести ім'я електронної пошти",
+                emailRegex: "Недійсний формат входу",
             },
             "first_name": {
-                required: "Required true",
-                minlength: "Enter your full name",
+                required: "Обов'язковие поле для заповнювання",
+                minlength: "Введіть Ваше повне ім'я",
             },
             "phone": {
-                required: "Required true",
-                minlength: "Enter your full phone number",
+                required: "Обов'язковие поле для заповнювання",
+
             },
-            
         },
     });
 });
@@ -214,8 +225,6 @@ $(function() {
             },
             "phone": {
                 required: true,
-                minlength: 10,
-                number: true,
             },
             "email":{
                 required: true,
@@ -225,16 +234,15 @@ $(function() {
         },
         messages: {
             "email": {
-                required: "You must enter a email name",
-                emailRegex: "Login format not valid",
+                required: "Ви повинні ввести ім'я електронної пошти",
+                emailRegex: "Недійсний формат входу",
             },
             "first_name": {
-                required: "Required true",
-                minlength: "Enter your full name",
+                required: "Обов'язковие поле для заповнювання",
+                minlength: "Введіть Ваше повне ім'я",
             },
             "phone": {
-                required: "Required true",
-                minlength: "Enter your full phone number",
+                required: "Обов'язковие поле для заповнювання",
             },
             
         },
@@ -251,8 +259,6 @@ $(function() {
             },
             "phone": {
                 required: true,
-                minlength: 10,
-                number: true,
             },
             "email":{
                 required: true,
@@ -262,16 +268,15 @@ $(function() {
         },
         messages: {
             "email": {
-                required: "You must enter a email name",
-                emailRegex: "Login format not valid",
+                required: "Ви повинні ввести ім'я електронної пошти",
+                emailRegex: "Недійсний формат входу",
             },
             "first_name": {
-                required: "Required true",
-                minlength: "Enter your full name",
+                required: "Обов'язковие поле для заповнювання",
             },
             "phone": {
-                required: "Required true",
-                minlength: "Enter your full phone number",
+                required: "Обов'язковие поле для заповнювання",
+                minlength: "Введіть свій повний номер телефону",
             },
             
         },
@@ -289,8 +294,6 @@ $(function() {
             },
             "phone": {
                 required: true,
-                minlength: 10,
-                number: true,
             },
             "email":{
                 required: true,
@@ -304,21 +307,47 @@ $(function() {
         },
         messages: {
             "email": {
-                required: "You must enter a email name",
-                emailRegex: "Login format not valid",
+                required: "Ви повинні ввести ім'я електронної пошти",
+                emailRegex: "Недійсний формат входу",
             },
             "first_name": {
-                required: "Required true",
-                minlength: "Enter your full name",
+                required: "Обов'язковие поле для заповнювання",
+                minlength: "Введіть Ваше повне ім'я",
             },
             "phone": {
-                required: "Required true",
-                minlength: "Enter your full phone number",
+                required: "Обов'язковие поле для заповнювання",
             },
             "name_vacancie":{
-                required: "Required true",
+                required: "Обов'язковие поле для заповнювання",
             },
             
         },
     });
 });
+
+
+$('#custom_add_file').change(function(){
+  if(this.files[0].size > 5242880){
+      $('.max_size_file').text("Файл завеликий! максимальний розмір 5MB") 
+      //console.log("Файл завеликий! максимальний розмір 5MB")
+       //alert("Файл завеликий! максимальний розмір 5MB");
+       this.value = "";
+    } else{
+        $('.max_size_file').text() 
+        var fullPath = $(this).val()
+        var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+        var filename = fullPath.substring(startIndex);
+        if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+            filename = filename.substring(1);
+        }
+        $('.uploaded_file').text(filename)
+        //alert(filename);
+    }
+})
+
+
+$("body").on("click","#toup",function(event){event.preventDefault();
+    var id=$(this).attr('href'),top=$(id).offset().top;
+    $('body,html').animate({scrollTop:top},1000);});
+
+
