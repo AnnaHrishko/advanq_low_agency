@@ -151,6 +151,7 @@ header {
   line-height: 30px;
   letter-spacing: -0.01em;
   color: rgba(43, 44, 56, 0.7);
+  margin-bottom: 15px;
 }
 .heading_index .text_and_btn_row .black_button {
   display: none;
@@ -517,6 +518,10 @@ header {
   line-height: 30px;
   letter-spacing: -0.01em;
   color: rgba(43, 44, 56, 0.7);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .type_of_practice_wrap .flex_about_person {
   width: 50%;
@@ -664,31 +669,6 @@ header {
   width: calc(33.3% - 20px);
   margin-left: 20px;
 }
-.flex_news .news_row.new_vacancies {
-  padding: 40px;
-  background-image: url(../img/bcg_new_vacancies.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-.flex_news .news_row.new_vacancies .text {
-  width: 75%;
-}
-.flex_news .news_row.new_vacancies .text h3 {
-  font-weight: 400;
-  font-size: 38px;
-  line-height: 44px;
-  letter-spacing: -0.02em;
-  color: #2B2C38;
-  margin-bottom: 10px;
-}
-.flex_news .news_row.new_vacancies .text p {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  color: #2B2C38;
-  margin-bottom: 38px;
-}
 
 .news_row {
   background: #F0F0F0;
@@ -737,6 +717,10 @@ header {
   letter-spacing: -0.01em;
   color: rgba(43, 44, 56, 0.7);
   margin-bottom: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .news_row .descr_part .data {
   font-weight: 500;
@@ -863,20 +847,6 @@ header {
 }
 .about_news_page .another_news {
   width: 35%;
-}
-
-.s_vacancies .news_row .descr_part {
-  padding: 40px 45px 15px 30px;
-}
-.s_vacancies .news_row .descr_part h4 {
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 32px;
-  color: #2B2C38;
-  margin-bottom: 10px;
-}
-.s_vacancies h2 {
-  margin-bottom: 10px;
 }
 
 .s_vacancies.s_press_centr {
@@ -1392,7 +1362,7 @@ header.index_page {
 }
 
 .popup_search {
-  background: #FFFFFF;
+  background: #F0F0F0;
   padding: 30px 30px 0 70px;
   height: 100vh;
 }
@@ -1413,19 +1383,21 @@ header.index_page {
   height: 24px;
   cursor: pointer;
 }
-.popup_search .input_search_popup {
-  width: 65%;
-  margin: 0 auto;
+
+.input_search_popup {
   display: flex;
-  align-items: flex-end;
-  margin-top: 130px;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 7px 7px 7px 20px;
+  width: calc(70% - 55px);
+  margin-right: 55px;
 }
-.popup_search .input_search_popup input {
+.input_search_popup input {
   border: none;
-  border-bottom: 1px solid #BFC0C3;
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 70px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
   letter-spacing: -0.02em;
   color: rgba(43, 44, 56, 0.4);
   outline: 0;
@@ -1436,6 +1408,14 @@ header.index_page {
   background-repeat: no-repeat;
   background-position: center left;
   background-size: 24px 24px;
+}
+
+.search_wrap_inner {
+  display: flex;
+  margin-top: 130px;
+}
+.search_wrap_inner .tags_press_center {
+  width: 30%;
 }
 
 .s_press_centr .flex_news .owl-dots {
@@ -1463,4 +1443,179 @@ body.hidden {
 }
 .add_file_wrap .max_size_file {
   font-style: 13px;
+}
+
+.intership_inner_wrap {
+  width: 90%;
+}
+.intership_inner_wrap .list_block {
+  margin-bottom: 25px;
+}
+.intership_inner_wrap .list_block:last-of-type {
+  margin-bottom: 40px;
+}
+.intership_inner_wrap .list_block p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  color: #2B2C38;
+  margin-bottom: 25px;
+}
+.intership_inner_wrap .list_block p a {
+  color: #2B2C38;
+}
+.intership_inner_wrap .list_block .list_name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  color: #2B2C38;
+}
+.intership_inner_wrap .list_block .list_col {
+  padding-left: 20px;
+}
+.intership_inner_wrap .list_block .list_col li {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  color: #2B2C38;
+}
+
+.mfp-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.s_vacancies h2 {
+  margin-bottom: 10px;
+}
+.s_vacancies .flex_news {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+}
+.s_vacancies .flex_news .vacancie_row {
+  background: #F0F0F0;
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+.s_vacancies .flex_news .vacancie_row:last-of-type {
+  margin-bottom: 0;
+}
+.s_vacancies .flex_news .vacancie_row .foto_news {
+  width: 30%;
+}
+.s_vacancies .flex_news .vacancie_row .foto_news img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s_vacancies .vacancie_row .descr_part {
+  padding: 26px 20px 26px 30px;
+  width: 70%;
+  position: relative;
+}
+.s_vacancies .vacancie_row .descr_part .name_vacancie {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #2B2C38;
+  margin-bottom: 10px;
+}
+.s_vacancies .vacancie_row .descr_part p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: rgba(43, 44, 56, 0.7);
+  margin-bottom: 10px;
+  width: 60%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.s_vacancies .vacancie_row .descr_part .data {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  color: #2B2C38;
+}
+.s_vacancies .vacancie_row .descr_part .sub_btn_with_arrow {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+
+.new_vacancies {
+  background: #F0F0F0;
+  padding: 40px;
+  background-image: url(../img/bcg_new_vacancies.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  margin-bottom: 30px;
+}
+.new_vacancies .text {
+  width: 75%;
+}
+.new_vacancies .text h3 {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #2B2C38;
+  margin-bottom: 10px;
+}
+.new_vacancies .text p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #2B2C38;
+  margin-bottom: 38px;
+}
+
+.search_page {
+  background: #F0F0F0;
+}
+.search_page .search_wrap_inner {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.search_page .search_wrap_inner .input_search_popup .black_button {
+  display: inline-block;
+}
+.search_page .search_wrap_inner .input_search_popup input::placeholder {
+  color: #2B2C38;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+}
+
+.search_page .flex_news .news_row {
+  background-color: white;
+}
+
+.search_page .s_contacts {
+  padding-bottom: 40px;
+}
+.search_page .contact_wrap {
+  background-color: white;
+}
+.search_page .need_consultation_wrap.mobile {
+  background-color: white;
+}
+.search_page .need_consultation_wrap {
+  background-color: white;
+}
+.search_page .address_wrap {
+  background-color: white;
 }

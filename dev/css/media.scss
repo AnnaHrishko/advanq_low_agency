@@ -189,9 +189,66 @@
 .popup_send_resume {
   width: 60%;
 }
+
+.intership_inner_wrap {
+  width: 100%;
+}
+
+.search_wrap_inner .tags_press_center li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.search_wrap_inner .tags_press_center li a {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.popup_search .input_search_popup input {
+  font-size: 17px;
+  line-height: 25px;
+  background-size: 20px 20px;
+}
+
+.popup_search .input_search_popup {
+  width: calc(70% - 20px);
+  margin-right: 20px;
+}
+
+.search_page{
+  .search_wrap_inner {
+    .input_search_popup{
+      font-size: 17px;
+      line-height: 25px;
+      input::placeholder{
+        color: #2B2C38;
+        opacity: 1;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+}
 }
 
 @media screen and (max-width: 980px){
+
+.intership_inner_wrap .list_block .list_col li {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.intership_inner_wrap .list_block .list_name {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.intership_inner_wrap .list_block p {
+  font-size: 15px;
+  line-height: 22px;
+}
 
 .popup_send_resume{
   width: 70%;
@@ -476,6 +533,71 @@ header.active{
 
 @media screen and (max-width: 768px){
 
+.search_wrap_inner {
+  display: block;
+}
+
+.search_page .search_wrap_inner .input_search_popup {
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  input{
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 20px 20px;
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .black_button{
+    display: none;
+  }
+}
+
+.search_page .flex_news .news_row {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.search_page{
+  .s_contacts{
+    padding-bottom: 10px;
+  }
+}
+
+
+.intership_inner_wrap .list_block p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.intership_inner_wrap .list_block .list_name {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.intership_inner_wrap .list_block .list_col li {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.intership_inner_wrap .list_block:last-of-type {
+  margin-bottom: 30px;
+}
+
+.intership_inner_wrap {
+  margin-bottom: 30px;
+  .black_button{
+    width: 100%;
+  }
+}
 
 .info_about_practice .about_person_descr .sub_btn_small {
   padding: 10px 18px;
@@ -828,27 +950,6 @@ header.active{
   background-size: contain;
 }
 
-.s_vacancies{
-  .flex_news{
-    .participation_in_internship_wrap.full_width_col{
-      order: 3;
-      padding: 30px 0;
-    }
-    .news_row{
-       &:nth-of-type(1){
-          order: 1;
-        }
-        &:nth-of-type(2){
-          order: 2;
-        }
-        &:nth-of-type(3){
-          order: 4;
-          margin-bottom: 30px;
-        }
-    }
-  }
-}
-
 .flex_news {
   width: 100%;
   margin-left: 0;
@@ -1139,26 +1240,57 @@ footer .privacy_pol a {
   margin-bottom: 20px;
 }
 
-.s_vacancies .news_row .descr_part {
-  padding: 20px 28px 18px 20px;
+.s_vacancies .flex_news .vacancie_row .foto_news {
+  width: 100%;
+  height: 20vh;
+  display: block;
 }
 
-.flex_news .news_row.new_vacancies {
+.s_vacancies .flex_news .vacancie_row {
+  display: block;
+  margin-bottom: 10px;
+  .descr_part {
+    padding: 20px 28px 18px 20px;
+    width: 100%;
+    .sub_btn_with_arrow{
+      display: none;
+    }
+  }
+}
+
+.s_vacancies .vacancie_row .descr_part .name_vacancie {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.s_vacancies .vacancie_row .descr_part p {
+  font-size: 13px;
+  line-height: 20px;
+  width: 100%;
+}
+
+.s_vacancies .vacancie_row .descr_part .data {
+  font-size: 11px;
+  line-height: 22px;
+}
+
+.new_vacancies {
   padding: 132px 20px 20px 20px;
+  margin-bottom: 10px;
 }
 
-.flex_news .news_row.new_vacancies .text h3 {
+.new_vacancies .text h3 {
   font-size: 32px;
   line-height: 42px;
 }
 
-.flex_news .news_row.new_vacancies .text p {
+.new_vacancies .text p {
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 20px;
 }
 
-.flex_news .news_row.new_vacancies .text {
+.new_vacancies .text {
   width: 100%;
   .black_button {
     padding: 11px 38px;
@@ -1168,10 +1300,11 @@ footer .privacy_pol a {
   }
 }
 
-.flex_news .news_row.new_vacancies {
+.new_vacancies {
   background-image: url(../img/bcg_mobile_vacansies.png);
   background-repeat: no-repeat;
   background-position: top left;
+  background-size: auto;
 }
 
 .about_news_page {
