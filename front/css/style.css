@@ -461,6 +461,7 @@ header {
   background-image: url(../img/bcg_need_conslt.png);
   background-repeat: no-repeat;
   background-position: top right;
+  overflow-y: scroll;
 }
 .need_consultation_wrap .text_part {
   width: 70%;
@@ -1085,6 +1086,7 @@ footer .year_issue {
 .popup_about_person_inner {
   padding: 40px;
   display: flex;
+  overflow-y: scroll;
 }
 .popup_about_person_inner .foto_person_popup {
   width: calc(40% - 40px);
@@ -1270,6 +1272,7 @@ header.index_page {
   margin: 0 auto;
   padding: 58px 50px 128px;
   position: relative;
+  overflow-y: scroll;
 }
 .popup_send_resume .close_popup {
   width: 24px;
@@ -1402,12 +1405,21 @@ header.index_page {
   color: rgba(43, 44, 56, 0.4);
   outline: 0;
   width: 90%;
-  padding: 0 0 0 40px;
+  height: 100%;
+  padding: 0 0 0 38px;
   margin-right: 20px;
   background-image: url(../img/search_orange.svg);
   background-repeat: no-repeat;
   background-position: center left;
   background-size: 24px 24px;
+}
+.input_search_popup input::placeholder {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: rgba(43, 44, 56, 0.4);
+  opacity: 1;
 }
 
 .search_wrap_inner {
@@ -1590,6 +1602,9 @@ body.hidden {
 }
 .search_page .search_wrap_inner .input_search_popup .black_button {
   display: inline-block;
+}
+.search_page .search_wrap_inner .input_search_popup input {
+  color: #2B2C38;
 }
 .search_page .search_wrap_inner .input_search_popup input::placeholder {
   color: #2B2C38;

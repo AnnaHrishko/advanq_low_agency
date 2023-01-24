@@ -429,6 +429,7 @@
 
 .header_inner {
   align-items: center;
+  padding: 15px 0 15px;
 }
 
 .popup_need_consultation .need_consultation_wrap {
@@ -507,6 +508,19 @@ header.active{
       padding: 13px 20px;
       border: unset;
       outline: 0;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: rgba(43, 44, 56, 0.4);
+      &::placeholder{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        color: rgba(43, 44, 56, 0.4);
+        opacity: 1;
+      }
     }
     img{
       width: 20px;
@@ -528,6 +542,17 @@ header.active{
   padding: 11px 28px;
   font-size: 14px;
   line-height: 20px;
+}
+
+.index_page{
+  .gumb{
+    position: absolute;
+    top: 27px;
+    right: 15px;
+  }
+  .gumb.active{
+    right: 0;
+  }
 }
 }
 
@@ -726,6 +751,7 @@ header.active{
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto;
+  width: 100%;
 }
 
 .heading_index{
@@ -1523,6 +1549,10 @@ footer .privacy_pol a {
 
 .input_search {
   width: 300px;
+}
+
+header.active .input_search {
+  width: 320px;
 }
 }
 
